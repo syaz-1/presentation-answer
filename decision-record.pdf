@@ -1,0 +1,118 @@
+%PDF-1.4
+%ту╧╙
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 2 /Kids [6 0 R 8 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 3552 >>
+stream
+BT /F2 10 Tf 44 796.0 Td (Selected cloud: Microsoft Azure) Tj ET
+BT /F2 13 Tf 44 783.0 Td (Decision 1 Ч Require a remote copy before committing payments) Tj ET
+BT /F2 11.5 Tf 44 760.1 Td (Page 1 of 2 Ч Decision and alternatives) Tj ET
+BT /F1 10.5 Tf 44 740.1 Td (Status: Recommended design. Revised: 5 November 2026. Owners: Payment owner, data team and) Tj ET
+BT /F1 10.5 Tf 44 726.5 Td (platform lead.) Tj ET
+BT /F2 11.5 Tf 44 707.9 Td (Decision) Tj ET
+BT /F1 10.5 Tf 44 687.9 Td (Use SQL Server 2022 Enterprise on Azure Virtual Machines. Keep three database computers in) Tj ET
+BT /F1 10.5 Tf 44 674.2 Td (each approved location. Require a durable remote copy before completing every payment-record) Tj ET
+BT /F1 10.5 Tf 44 660.6 Td (change. Target zero committed loss for one covered location failure.) Tj ET
+BT /F1 10.5 Tf 44 642.0 Td (I choose stronger record protection over continued posting during a broken connection. Pause) Tj ET
+BT /F1 10.5 Tf 44 628.3 Td (posting if the remote copy cannot be reached. A waiting request must not receive a successful) Tj ET
+BT /F1 10.5 Tf 44 614.7 Td (result.) Tj ET
+BT /F2 11.5 Tf 44 596.0 Td (Why this choice) Tj ET
+BT /F1 10.5 Tf 44 576.1 Td (The brief says near-zero, without an allowed loss count or value. Zero loss is my proposed) Tj ET
+BT /F1 10.5 Tf 44 562.4 Td (stricter interpretation for one location failure. It is not a stated requirement. The payment) Tj ET
+BT /F1 10.5 Tf 44 548.8 Td (owner must approve the interpretation before the pilot.) Tj ET
+BT /F1 10.5 Tf 44 530.1 Td (This avoids inventing an allowance for missing payments. It adds maintenance, licences and) Tj ET
+BT /F1 10.5 Tf 44 516.5 Td (network delay. It can reduce posting availability. Test the trade-off against both response-) Tj ET
+BT /F1 10.5 Tf 44 502.8 Td (time and 99.99% journey targets.) Tj ET
+BT /F2 11.5 Tf 44 484.2 Td (How it works) Tj ET
+BT /F1 10.5 Tf 44 464.2 Td (Each location has a local database recovery group. Link them with a distributed availability) Tj ET
+BT /F1 10.5 Tf 44 450.6 Td (group. Require synchronous remote copying and set) Tj ET
+BT /F1 10.5 Tf 44 436.9 Td (REQUIRED_SYNCHRONIZED_SECONDARIES_TO_COMMIT=1 on that cross-location group. Local copies) Tj ET
+BT /F1 10.5 Tf 44 423.3 Td (cannot replace the required remote copy.) Tj ET
+BT /F1 10.5 Tf 44 404.6 Td (A commit is a completed database change. Protect it even if the customer never received its) Tj ET
+BT /F1 10.5 Tf 44 391.0 Td (reply. Microsoft documents this commit control for SQL Server 2022 and later. Commit controls) Tj ET
+BT /F2 11.5 Tf 44 372.3 Td (Rejected alternatives) Tj ET
+BT /F1 10.5 Tf 44 352.4 Td (Azure SQL Database has less maintenance. Its normal regional copying happens after commit and) Tj ET
+BT /F1 10.5 Tf 44 338.7 Td (forced recovery can lose records. Prefer this simpler option if the owner accepts a measurable) Tj ET
+BT /F1 10.5 Tf 44 325.1 Td (loss tolerance and tests support it. I reject it for the ledger only under the proposed zero-) Tj ET
+BT /F1 10.5 Tf 44 311.4 Td (loss assumption. Microsoft limits) Tj ET
+BT /F1 10.5 Tf 44 292.8 Td (Waiting for copying only after a local commit protects some customer replies. It does not) Tj ET
+BT /F1 10.5 Tf 44 279.1 Td (protect every completed local change. I also reject two independent writers for the same) Tj ET
+BT /F1 10.5 Tf 44 265.5 Td (ledger. They add conflict and duplicate-payment risk.) Tj ET
+BT /F1 8 Tf 44 28 Td (Syazwan | 5 November 2026 | Draft decision | 1 / 2) Tj ET
+BT /F1 8 Tf 44 16 Td (References: see sources.md in this folder.) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 3774 >>
+stream
+BT /F2 10 Tf 44 796.0 Td (Selected cloud: Microsoft Azure) Tj ET
+BT /F2 13 Tf 44 783.0 Td (Decision 1 Ч Require a remote copy before committing payments) Tj ET
+BT /F2 11.5 Tf 44 760.1 Td (Page 2 of 2 Ч Failure behavior and proof) Tj ET
+BT /F2 11.5 Tf 44 740.1 Td (Recover without two active senders) Tj ET
+BT /F1 10.5 Tf 44 720.2 Td (An isolated old database must block new commits because remote protection is required. Also) Tj ET
+BT /F1 10.5 Tf 44 706.5 Td (remove its separate credentials at the bank's external-payment gateway. Close old sessions.) Tj ET
+BT /F1 10.5 Tf 44 692.9 Td (The gateway must reject each new instruction from that location.) Tj ET
+BT /F1 10.5 Tf 44 674.2 Td (Stop old computers where management access works. Do not rely on that action alone. The) Tj ET
+BT /F1 10.5 Tf 44 660.6 Td (gateway is an explicit dependency outside the failed location. Prove its independent) Tj ET
+BT /F1 10.5 Tf 44 647.0 Td (availability and sender controls.) Tj ET
+BT /F1 10.5 Tf 44 628.3 Td (Then follow the documented SQL role-change procedure. Update application connections to the) Tj ET
+BT /F1 10.5 Tf 44 614.7 Td (recovery group's listener. Check a payment before redirecting callers. The distributed group) Tj ET
+BT /F1 10.5 Tf 44 601.0 Td (has no single application listener. Use supported local listeners; check the chosen Azure VM) Tj ET
+BT /F1 10.5 Tf 44 587.4 Td (listener configuration. Database layout) Tj ET
+BT /F2 11.5 Tf 44 568.7 Td (Protection after switching) Tj ET
+BT /F1 10.5 Tf 44 548.8 Td (After one location is lost, new posting has only local protection. Resuming requires a pre-) Tj ET
+BT /F1 10.5 Tf 44 535.1 Td (approved, time-limited reduced-protection mode. A second location failure can then lose new) Tj ET
+BT /F1 10.5 Tf 44 521.5 Td (payments. Restore remote protection urgently.) Tj ET
+BT /F1 10.5 Tf 44 502.8 Td (If this exposure is prohibited, wait for another safe remote copy. A two-location design then) Tj ET
+BT /F1 10.5 Tf 44 489.2 Td (cannot promise full posting within 30 minutes. Approve that policy before the pilot.) Tj ET
+BT /F2 11.5 Tf 44 470.5 Td (Required evidence) Tj ET
+BT /F1 10.5 Tf 44 450.6 Td (Run peak traffic while losing a zone, a location and the link between running locations. Count) Tj ET
+BT /F1 10.5 Tf 44 436.9 Td (all test commits using independent records. Check that the isolated old system cannot commit) Tj ET
+BT /F1 10.5 Tf 44 423.3 Td (or dispatch. Recover waiting messages and uncertain external payments without charging twice.) Tj ET
+BT /F1 10.5 Tf 44 404.6 Td (Measure detection, approval, database recovery, connection changes and full customer recovery.) Tj ET
+BT /F1 10.5 Tf 44 391.0 Td (Pass only with zero missing protected commits and recovery within 30 minutes in the covered) Tj ET
+BT /F1 10.5 Tf 44 377.3 Td (exercise. Test response time and a clean restore too. Results remain unmeasured.) Tj ET
+BT /F2 11.5 Tf 44 358.7 Td (Limits and review triggers) Tj ET
+BT /F1 10.5 Tf 44 338.7 Td (This design does not promise zero loss after both copies are destroyed or corrupted. The) Tj ET
+BT /F1 10.5 Tf 44 325.1 Td (normal protection target does not apply to new payments made with only local protection.) Tj ET
+BT /F1 10.5 Tf 44 306.4 Td (Review if the loss tolerance changes, or latency, cost, staffing, residency or outages make) Tj ET
+BT /F1 10.5 Tf 44 292.8 Td (the design unsuitable. Do not silently disable protection to meet availability. The payments) Tj ET
+BT /F1 10.5 Tf 44 279.1 Td (and risk owners approve the failure policy. Product and platform owners prove operating) Tj ET
+BT /F1 10.5 Tf 44 265.5 Td (readiness.) Tj ET
+BT /F1 8 Tf 44 28 Td (Syazwan | 5 November 2026 | Draft decision | 2 / 2) Tj ET
+BT /F1 8 Tf 44 16 Td (References: see sources.md in this folder.) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 7 0 R >>
+endobj
+xref
+0 9
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000224 00000 n 
+0000000326 00000 n 
+0000003930 00000 n 
+0000004072 00000 n 
+0000007898 00000 n 
+trailer
+<< /Size 9 /Root 1 0 R >>
+startxref
+8040
+%%EOF

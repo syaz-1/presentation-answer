@@ -1,0 +1,101 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="1160" viewBox="0 0 1440 1160" role="img" aria-labelledby="title description">
+<title id="title">Problem-driven enterprise architecture for Azure payments</title>
+<desc id="description">Business problems drive business, data, application and technology decisions. Governance applies across all layers. The target uses Microsoft Azure, with controlled existing bank and AWS connections.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#475569" stroke-width="1.4"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#183347}.title{font-size:27px;font-weight:700}.subtitle{font-size:15px;fill:#475569}.heading{font-size:18px;font-weight:700}.label{font-size:15px}.small{font-size:14px}.arrow{fill:none;stroke:#475569;stroke-width:2;marker-end:url(#arrow)}</style>
+<rect width="1440" height="1160" fill="#f8fafc"/>
+<text x="32" y="42" class="title">Microsoft Azure | Problem-driven enterprise architecture</text>
+<text x="32" y="70" class="subtitle">Business needs drive the decisions and services that support the payment platform.</text>
+<rect x="32" y="100" width="440" height="115" rx="9" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1.5"/>
+<text x="47" y="129" class="heading">Problem: protect customers</text>
+<text x="47" y="154" class="label">Correct payments; no duplicate charges</text>
+<text x="47" y="176" class="label">99.99% critical-journey availability</text>
+<rect x="490" y="100" width="440" height="115" rx="9" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1.5"/>
+<text x="505" y="129" class="heading">Problem: control country risk</text>
+<text x="505" y="154" class="label">Approved locations; separate legal entities</text>
+<text x="505" y="176" class="label">Near-zero committed-payment loss</text>
+<rect x="948" y="100" width="460" height="115" rx="9" fill="#e0f2fe" stroke="#7dd3fc" stroke-width="1.5"/>
+<text x="963" y="129" class="heading">Problem: modernize safely</text>
+<text x="963" y="154" class="label">Keep existing bank and AWS services working</text>
+<text x="963" y="176" class="label">Clear ownership, cost and future choices</text>
+<rect x="32" y="255" width="1130" height="145" rx="9" fill="#eff6ff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="47" y="284" class="heading">B1 / BUSINESS — what must the bank achieve?</text>
+<text x="48" y="320" class="heading">Reliable payment journeys</text>
+<text x="48" y="346" class="label">Submission, posting and status</text>
+<text x="48" y="368" class="label">Recovery within 30 minutes</text>
+<text x="420" y="320" class="heading">Country accountability</text>
+<text x="420" y="346" class="label">Separate legal entities</text>
+<text x="420" y="368" class="label">Named payment and risk owners</text>
+<text x="792" y="320" class="heading">Controlled change</text>
+<text x="792" y="346" class="label">Move a bounded payment group</text>
+<text x="792" y="368" class="label">Keep one official writer</text>
+<rect x="32" y="440" width="1130" height="145" rx="9" fill="#f0fdf4" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="47" y="469" class="heading">D1 / DATA — what must be protected?</text>
+<text x="48" y="505" class="heading">Official payment records</text>
+<text x="48" y="531" class="label">Save related changes together</text>
+<text x="48" y="553" class="label">Keep lasting payment references</text>
+<text x="420" y="505" class="heading">Safe remote copy</text>
+<text x="420" y="531" class="label">Require it before commit</text>
+<text x="420" y="553" class="label">Pause posting if unavailable</text>
+<text x="792" y="505" class="heading">Permitted locations</text>
+<text x="792" y="531" class="label">Approve records and all copies</text>
+<text x="792" y="553" class="label">Retain clean recoverable history</text>
+<rect x="32" y="625" width="1130" height="145" rx="9" fill="#fff7ed" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="47" y="654" class="heading">A1 / APPLICATIONS — how is the journey delivered?</text>
+<text x="48" y="690" class="heading">Accept and validate</text>
+<text x="48" y="716" class="label">Check caller and payment</text>
+<text x="48" y="738" class="label">Recognize repeated requests</text>
+<text x="420" y="690" class="heading">Post and connect</text>
+<text x="420" y="716" class="label">One protected ledger</text>
+<text x="420" y="738" class="label">Controlled external sending</text>
+<text x="792" y="690" class="heading">Check and reconcile</text>
+<text x="792" y="716" class="label">Resolve uncertain outcomes</text>
+<text x="792" y="738" class="label">Separate rules from cloud links</text>
+<rect x="32" y="810" width="1130" height="185" rx="9" fill="#f5f3ff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="47" y="839" class="heading">T1 / TECHNOLOGY — which Azure services support the decisions?</text>
+<text x="48" y="875" class="heading">Run and connect</text>
+<text x="48" y="903" class="small">Azure Kubernetes Service</text>
+<text x="48" y="927" class="small">Service Bus Premium</text>
+<text x="48" y="951" class="small">Container Apps / Functions</text>
+<text x="330" y="875" class="heading">Protect records</text>
+<text x="330" y="903" class="small">SQL Server on Azure VMs</text>
+<text x="330" y="927" class="small">Required remote copying</text>
+<text x="330" y="951" class="small">Azure Backup</text>
+<text x="612" y="875" class="heading">Control access</text>
+<text x="612" y="903" class="small">Entra ID / Key Vault</text>
+<text x="612" y="927" class="small">Application Gateway / APIM</text>
+<text x="612" y="951" class="small">ExpressRoute / Firewall</text>
+<text x="894" y="875" class="heading">Operate and release</text>
+<text x="894" y="903" class="small">Azure Monitor / Sentinel</text>
+<text x="894" y="927" class="small">Azure Policy / subscriptions</text>
+<text x="894" y="951" class="small">Azure DevOps / Registry</text>
+<rect x="1185" y="255" width="223" height="740" rx="9" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="1200" y="284" class="heading">G1 / GOVERNANCE</text>
+<text x="1200" y="330" class="heading">Business owner</text>
+<text x="1200" y="357" class="small">Sets payment priorities</text>
+<text x="1200" y="379" class="small">Accepts recovery policy</text>
+<text x="1200" y="455" class="heading">Product teams</text>
+<text x="1200" y="482" class="small">Own applications</text>
+<text x="1200" y="504" class="small">Own service targets</text>
+<text x="1200" y="580" class="heading">Platform team</text>
+<text x="1200" y="607" class="small">Owns shared setup</text>
+<text x="1200" y="629" class="small">Enforces common rules</text>
+<text x="1200" y="705" class="heading">Risk and security</text>
+<text x="1200" y="732" class="small">Approve locations</text>
+<text x="1200" y="754" class="small">Check access and evidence</text>
+<text x="1200" y="830" class="heading">Finance and delivery</text>
+<text x="1200" y="857" class="small">Track cost per payment</text>
+<text x="1200" y="879" class="small">Approve move-stage gates</text>
+<path d="M596 215 L596 248" class="arrow"/>
+<path d="M596 400 L596 433" class="arrow"/>
+<path d="M596 585 L596 618" class="arrow"/>
+<path d="M596 770 L596 803" class="arrow"/>
+<path d="M1185 330 L1168 330" class="arrow"/>
+<path d="M1185 515 L1168 515" class="arrow"/>
+<path d="M1185 700 L1168 700" class="arrow"/>
+<path d="M1185 900 L1168 900" class="arrow"/>
+<rect x="32" y="1030" width="1376" height="100" rx="9" fill="#ffffff" stroke="#cbd5e1" stroke-width="1.5"/>
+<text x="47" y="1059" class="heading">Transition: understand → prepare → pilot → expand → retire</text>
+<text x="47" y="1084" class="label">At each step: problem → decision → owner → evidence. Reopen choices when requirements or test results change.</text>
+<text x="47" y="1106" class="label">Recovery limit: new posting with only local protection needs prior approval. Full protection must be restored.</text>
+</svg>

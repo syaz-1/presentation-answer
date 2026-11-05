@@ -1,0 +1,163 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Count 1 /Kids [9 0 R] >>
+endobj
+3 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Type /Annot /Subtype /Link /Rect [34 37 204 49] /Border [0 0 0] /A << /S /URI /URI (https://learn.microsoft.com/en-us/azure/container-apps/compare-options) >> >>
+endobj
+6 0 obj
+<< /Type /Annot /Subtype /Link /Rect [220 37 390 49] /Border [0 0 0] /A << /S /URI /URI (https://learn.microsoft.com/en-us/sql/t-sql/statements/alter-availability-group-transact-sql?view=sql-server-ver17) >> >>
+endobj
+7 0 obj
+<< /Type /Annot /Subtype /Link /Rect [397 37 561 49] /Border [0 0 0] /A << /S /URI /URI (https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database) >> >>
+endobj
+8 0 obj
+<< /Length 11009 >>
+stream
+0.09 0.16 0.22 rg BT /F2 18 Tf 34.00 803.00 Td (Payment platform modernization) Tj ET
+0.09 0.16 0.22 rg BT /F1 8.25 Tf 34.00 786.00 Td (Selected cloud: Microsoft Azure | 99.99% availability | Recovery within 30 minutes | Near-zero committed-record loss) Tj ET
+0.94 0.97 1 rg 0.58 0.64 0.72 RG 0.6 w 34 724 126 47 re B
+0.09 0.16 0.22 rg BT /F2 9 Tf 40.00 755.00 Td (Customer entry) Tj ET
+0.09 0.16 0.22 rg BT /F1 7 Tf 40.00 742.00 Td (Application Gateway / API) Tj ET
+0.09 0.16 0.22 rg BT /F1 7 Tf 40.00 733.00 Td (Management) Tj ET
+0.09 0.16 0.22 rg BT /F1 8 Tf 161.00 744.00 Td (>) Tj ET
+0.94 0.97 1 rg 0.58 0.64 0.72 RG 0.6 w 168 724 126 47 re B
+0.09 0.16 0.22 rg BT /F2 9 Tf 174.00 755.00 Td (Payment services) Tj ET
+0.09 0.16 0.22 rg BT /F1 7 Tf 174.00 742.00 Td (AKS / Service Bus) Tj ET
+0.09 0.16 0.22 rg BT /F1 8 Tf 295.00 744.00 Td (>) Tj ET
+0.94 0.97 1 rg 0.58 0.64 0.72 RG 0.6 w 302 724 126 47 re B
+0.09 0.16 0.22 rg BT /F2 9 Tf 308.00 755.00 Td (Official records) Tj ET
+0.09 0.16 0.22 rg BT /F1 7 Tf 308.00 742.00 Td (SQL Server on Azure VMs) Tj ET
+0.09 0.16 0.22 rg BT /F1 8 Tf 429.00 744.00 Td (>) Tj ET
+0.94 0.97 1 rg 0.58 0.64 0.72 RG 0.6 w 436 724 126 47 re B
+0.09 0.16 0.22 rg BT /F2 9 Tf 442.00 755.00 Td (Safe remote copy) Tj ET
+0.09 0.16 0.22 rg BT /F1 7 Tf 442.00 742.00 Td (Second approved location) Tj ET
+0.09 0.16 0.22 rg BT /F1 8 Tf 34.00 711.00 Td (Separate entities and approved locations. One official writer per entity. Pause unsafe posting.) Tj ET
+0.03 0.30 0.40 rg BT /F2 10 Tf 34.00 693.00 Td (1. Problem, ownership and design) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 678.00 Td (Move payments safely across countries. Separate each) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 666.50 Td (legal entity's subscriptions, networks, records and) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 655.00 Td (keys. Keep existing bank and AWS connections during) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 643.50 Td (the move.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 627.00 Td (Platform teams own shared rules. Product teams own) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 615.50 Td (applications and service targets. Payment and) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 604.00 Td (country-risk owners approve data locations and) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 592.50 Td (recovery exposure. Record exceptions with owners and) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 581.00 Td (expiry dates.) Tj ET
+0.03 0.30 0.40 rg BT /F2 10 Tf 34.00 561.50 Td (2. Protect records and recover) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 546.50 Td (Use SQL Server on Azure VMs. Require a safe remote) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 535.00 Td (copy before completing a payment-record change. Save) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 523.50 Td (payment, accounting, duplicate checks and next work) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 512.00 Td (together. Retry the same reference without charging) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 500.50 Td (twice.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 484.00 Td (Zero committed loss for one covered location failure) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 472.50 Td (is a proposed stricter interpretation of near-zero.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 461.00 Td (It costs more and can pause posting when the remote) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 449.50 Td (copy is unreachable. Reassess simpler Azure SQL) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 438.00 Td (Database if an acceptable loss is agreed. [2]) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 421.50 Td (Detect failure, reject the old sender at an) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 410.00 Td (independent bank gateway, activate protected) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 398.50 Td (records, test a payment and redirect callers. Target) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 387.00 Td (30 minutes end to end. Resuming with only local) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 375.50 Td (protection needs prior approval; otherwise recovery) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 364.00 Td (may take longer.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 347.50 Td (Keep protected Azure Backup copies. Restore clean) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 336.00 Td (records after an attack. Reconcile uncertain) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 324.50 Td (payments against external confirmations. Neither) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 313.00 Td (both-location loss nor copied corruption carries the) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 301.50 Td (zero-loss target.) Tj ET
+0.03 0.30 0.40 rg BT /F2 10 Tf 34.00 282.00 Td (3. Security and operating controls) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 267.00 Td (Stolen privileged access: enforce strong Entra sign-) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 255.50 Td (in and time-limited roles; detect unusual elevation) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 244.00 Td (in Sentinel; revoke access and investigate.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 227.50 Td (Harmful releases: review and verify software; detect) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 216.00 Td (unapproved versions; block and rebuild. Cross-entity) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 204.50 Td (access: isolate permissions; test denied access;) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 193.00 Td (block and investigate.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 176.50 Td (Use ExpressRoute and Firewall for controlled bank) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 165.00 Td (connections, Key Vault for secrets, and Azure) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 153.50 Td (Monitor for payment journeys. Private connectivity) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 34.00 142.00 Td (still needs data protection.) Tj ET
+0.03 0.30 0.40 rg BT /F2 10 Tf 311.00 693.00 Td (4. Compare platforms by component) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 678.00 Td (Azure options address EKS, ECS, Lambda and EC2) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 666.50 Td (reference workloads. They are not exact feature) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 655.00 Td (copies. [1]) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 638.50 Td (Core payments: choose AKS only if direct Kubernetes) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 627.00 Td (placement and operating policies are needed.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 615.50 Td (Container Apps is the simpler alternative. Functions) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 604.00 Td (needs a suitable execution design; VMs add OS) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 592.50 Td (maintenance.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 576.00 Td (Reconciliation: choose Container Apps jobs. AKS also) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 564.50 Td (fits but adds cluster dependency. Functions suits) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 553.00 Td (bounded checks. VMs need more maintenance.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 536.50 Td (Notifications: choose Functions for short event) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 525.00 Td (work. AKS and Container Apps can host handlers. VMs) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 513.50 Td (add little value for the proposed task.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 497.00 Td (Legacy OS-bound adapter: choose VMs initially. AKS) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 485.50 Td (and Container Apps need vendor-supported containers.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 474.00 Td (Functions needs redesign. Confirm the vendor) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 462.50 Td (constraint.) Tj ET
+0.03 0.30 0.40 rg BT /F2 10 Tf 311.00 443.00 Td (5. Portability and release) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 428.00 Td (Application: separate payment rules from Azure) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 416.50 Td (connections. APIs: keep versioned request and event) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 405.00 Td (contracts. Data: test export and identify SQL-) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 393.50 Td (specific features. Automation: keep repeatable) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 382.00 Td (builds; rewrite provider-specific setup when moving.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 365.50 Td (Promote approved versions with Azure DevOps and) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 354.00 Td (Container Registry. Test the same payment behavior) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 342.50 Td (with replacement cloud connections. Containers alone) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 331.00 Td (do not prove portability.) Tj ET
+0.03 0.30 0.40 rg BT /F2 10 Tf 311.00 311.50 Td (6. Migration, risk and acceptance) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 296.50 Td (Discover > prepare > move reports > pilot one) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 285.00 Td (payment group > expand > retire. Each wave needs) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 273.50 Td (matching balances, support readiness and agreed) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 262.00 Td (service checks. Keep one official writer during) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 250.50 Td (coexistence.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 234.00 Td (Before new writes, return directly. Afterwards,) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 222.50 Td (pause and reconcile new payments before returning.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 211.00 Td (Give temporary systems removal dates and owners.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 194.50 Td (Main risks: remote-link delays, unapproved) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 183.00 Td (locations, weak gateway controls and missing support) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 171.50 Td (skills. Track both-location capacity, licences and) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 160.00 Td (cost per successful payment.) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 143.50 Td (Test peak traffic, zone loss, location loss,) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 132.00 Td (duplicate delivery and clean restore. Count missing) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 120.50 Td (commits and full recovery time. Locations, volumes) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 109.00 Td (and compatibility remain unconfirmed. No operating) Tj ET
+0.09 0.16 0.22 rg BT /F1 9.5 Tf 311.00 97.50 Td (results are claimed.) Tj ET
+0.75 0.80 0.85 RG 0.6 w 34 53 m 561 53 l S
+0.03 0.30 0.40 rg BT /F1 7.5 Tf 34.00 40.00 Td (1. Azure hosting comparison) Tj ET
+0.03 0.30 0.40 rg BT /F1 7.5 Tf 220.00 40.00 Td (2. Database-copy controls) Tj ET
+0.03 0.30 0.40 rg BT /F1 7.5 Tf 397.00 40.00 Td (3. Azure SQL recovery limits) Tj ET
+0.09 0.16 0.22 rg BT /F1 7.5 Tf 34.00 26.00 Td (Presentation summary. Supporting diagrams and the two-page decision record remain in this folder.) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 3 0 R /F2 4 0 R >> >> /Contents 8 0 R /Annots [5 0 R 6 0 R 7 0 R] >>
+endobj
+xref
+0 10
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000218 00000 n 
+0000000320 00000 n 
+0000000501 00000 n 
+0000000727 00000 n 
+0000000915 00000 n 
+0000011977 00000 n 
+trailer
+<< /Size 10 /Root 1 0 R >>
+startxref
+12147
+%%EOF

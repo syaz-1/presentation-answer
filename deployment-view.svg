@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1320" viewBox="0 0 1600 1320" role="img" aria-labelledby="title desc">
+<title id="title">Microsoft Azure payment system</title>
+<desc id="desc">Separate bank entities, main and recovery locations, three facilities, protected connections and access checks. Protected database commits require a safe remote copy. After losing a location, new posting needs an approved reduced-protection policy.</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="none" stroke="#475569"/></marker></defs>
+<style>text{font-family:Arial,Helvetica,sans-serif;fill:#142b40} .title{font-size:27px;font-weight:bold}.heading{font-size:17px;font-weight:bold}.label{font-size:14px}.small{font-size:12px}.edge{fill:none;stroke:#475569;stroke-width:2;marker-end:url(#arrow)}.rep{fill:none;stroke:#b45309;stroke-width:2;stroke-dasharray:6 4;marker-end:url(#arrow)}</style>
+<rect width="1600" height="1320" fill="#f8fafc"/>
+<text x="30" y="40" class="title">Microsoft Azure | Payment platform deployment</text>
+<text x="30" y="66" class="label">Entity A is the example. Both locations need bank approval. Give every entity separate systems.</text>
+<rect x="24" y="90" width="440" height="115" rx="9" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="37" y="115" class="heading">Customers and location choice</text>
+<text x="37" y="137" class="label">Payment details go to the chosen location.</text>
+<rect x="40" y="150" width="175" height="43" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="53" y="175" class="label">Customers</text>
+<rect x="248" y="150" width="200" height="43" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="261" y="175" class="label">1. Traffic Manager</text>
+<polyline points="215,172 248,172" class="edge"/>
+<rect x="490" y="90" width="1080" height="115" rx="9" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="503" y="115" class="heading">Shared rules and access checks</text>
+<text x="503" y="137" class="label">Microsoft Entra ID checks access. Azure Policy enforces shared rules. Teams have separate responsibilities.</text>
+<text x="503" y="157" class="label">Azure DevOps and Azure Container Registry help teams check and release approved application versions.</text>
+<rect x="24" y="245" width="300" height="950" rx="9" fill="#eef2ff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="37" y="270" class="heading">Existing systems</text>
+<rect x="40" y="290" width="268" height="105" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="53" y="315" class="heading">Bank facilities</text>
+<text x="53" y="337" class="label">Core banking / payment records</text>
+<text x="53" y="357" class="label">Independent payment gateway</text>
+<rect x="40" y="425" width="268" height="105" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="53" y="450" class="heading">Existing AWS applications</text>
+<text x="53" y="472" class="label">Keep working during the move</text>
+<text x="53" y="492" class="label">Approved protected connection</text>
+<rect x="40" y="575" width="268" height="150" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="53" y="600" class="heading">5. Connections and checks</text>
+<text x="53" y="622" class="label">ExpressRoute - private connection</text>
+<text x="53" y="642" class="label">Azure Firewall Premium</text>
+<text x="53" y="662" class="label">Find approved internal services</text>
+<text x="53" y="682" class="label">Protect sensitive data in transit</text>
+<rect x="40" y="785" width="268" height="110" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="53" y="810" class="heading">External payment systems</text>
+<text x="53" y="832" class="label">Gateway rejects old sender</text>
+<text x="53" y="852" class="label">Check result before sending again</text>
+<rect x="40" y="960" width="268" height="175" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="53" y="985" class="heading">Connection rules</text>
+<text x="53" y="1007" class="label">Allow only approved connections</text>
+<text x="53" y="1027" class="label">Check private access paths</text>
+<text x="53" y="1047" class="label">Test a separate backup route</text>
+<text x="53" y="1067" class="label">A private connection alone</text>
+<text x="53" y="1087" class="label">does not protect data from reading.</text>
+<polyline points="174,395 174,575" class="edge"/>
+<polyline points="308,480 317,480 317,650 308,650" class="edge"/>
+<polyline points="174,725 174,785" class="edge"/>
+<rect x="350" y="245" width="890" height="950" rx="9" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+<text x="363" y="270" class="heading">Entity A - separate live systems</text>
+<text x="363" y="292" class="label">Separate Azure subscriptions, private networks, applications, records, secrets and access rights</text>
+<rect x="370" y="315" width="410" height="805" rx="9" fill="#ffffff" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="383" y="340" class="heading">Approved main location</text>
+<text x="383" y="362" class="label">A whole-location failure is possible</text>
+<rect x="805" y="315" width="415" height="805" rx="9" fill="#ffffff" stroke="#60a5fa" stroke-width="1.5"/>
+<text x="818" y="340" class="heading">Approved recovery location</text>
+<text x="818" y="362" class="label">Ready if the main location fails</text>
+<rect x="390" y="385" width="370" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="403" y="410" class="heading">2. Screen incoming requests</text>
+<text x="403" y="432" class="label">Application Gateway WAF v2</text>
+<rect x="390" y="480" width="370" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="403" y="505" class="heading">Check access and request limits</text>
+<text x="403" y="527" class="label">API Management Premium (classic)</text>
+<rect x="390" y="575" width="370" height="130" rx="9" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="403" y="600" class="heading">3. Run payment applications</text>
+<text x="403" y="622" class="label">Azure Kubernetes Service</text>
+<rect x="403" y="643" width="108" height="45" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="416" y="668" class="label">Zone 1</text>
+<rect x="520" y="643" width="108" height="45" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="533" y="668" class="label">Zone 2</text>
+<rect x="637" y="643" width="108" height="45" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="650" y="668" class="label">Zone 3</text>
+<rect x="390" y="740" width="370" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="403" y="765" class="heading">4. Private database connections</text>
+<text x="403" y="787" class="label">Local listener; three database copies</text>
+<rect x="390" y="830" width="370" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="403" y="855" class="heading">Official payment records</text>
+<text x="403" y="877" class="label">SQL Server on Azure Virtual Machines</text>
+<rect x="390" y="925" width="370" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="403" y="950" class="heading">Work waiting to be sent</text>
+<text x="403" y="972" class="label">Service Bus Premium</text>
+<rect x="390" y="1020" width="370" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="403" y="1045" class="heading">Entity secrets</text>
+<text x="403" y="1067" class="label">Azure Key Vault - limited access</text>
+<rect x="825" y="385" width="375" height="100" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="838" y="410" class="heading">Prepared request checks</text>
+<text x="838" y="432" class="label">Application Gateway WAF v2</text>
+<text x="838" y="452" class="label">API Management Premium (classic)</text>
+<rect x="825" y="575" width="375" height="130" rx="9" fill="#e0f2fe" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="838" y="600" class="heading">Prepared payment applications</text>
+<text x="838" y="622" class="label">Azure Kubernetes Service</text>
+<rect x="837" y="643" width="108" height="45" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="850" y="668" class="label">Zone 1</text>
+<rect x="954" y="643" width="108" height="45" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="967" y="668" class="label">Zone 2</text>
+<rect x="1071" y="643" width="108" height="45" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="1084" y="668" class="label">Zone 3</text>
+<rect x="825" y="740" width="375" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="838" y="765" class="heading">Private database connections</text>
+<text x="838" y="787" class="label">Local listener; three database copies</text>
+<rect x="825" y="830" width="375" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="838" y="855" class="heading">Recovery payment records</text>
+<text x="838" y="877" class="label">SQL Server on Azure Virtual Machines</text>
+<rect x="825" y="925" width="375" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="838" y="950" class="heading">Recovery waiting work</text>
+<text x="838" y="972" class="label">Service Bus Premium - bank activates</text>
+<rect x="825" y="1020" width="375" height="65" rx="9" fill="#ffffff" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="838" y="1045" class="heading">Recovery secrets</text>
+<text x="838" y="1067" class="label">Azure Key Vault - test access</text>
+<polyline points="128,193 128,222 337,222 337,418 390,418" class="edge"/>
+<polyline points="448,172 473,172 473,228 1012,228 1012,315" class="rep"/>
+<text x="655" y="221" class="small">Send callers here only after recovery checks</text>
+<polyline points="575,450 575,480" class="edge"/>
+<polyline points="575,545 575,575" class="edge"/>
+<polyline points="575,705 575,740" class="edge"/>
+<polyline points="575,795 575,830" class="edge"/>
+<polyline points="390,767 380,767 380,958 390,958" class="edge"/>
+<polyline points="380,958 380,1052 390,1052" class="edge"/>
+<polyline points="1012,485 1012,575" class="edge"/>
+<polyline points="1012,705 1012,740" class="edge"/>
+<polyline points="1012,795 1012,830" class="edge"/>
+<polyline points="1200,767 1210,767 1210,958 1200,958" class="edge"/>
+<polyline points="1210,958 1210,1052 1200,1052" class="edge"/>
+<polyline points="760,862 825,862" class="rep"/>
+<polyline points="760,957 825,957" class="rep"/>
+<text x="765" y="850" class="small">wait</text>
+<text x="765" y="945" class="small">copy</text>
+<polyline points="308,650 337,650 337,513 390,513" class="edge"/>
+<text x="362" y="1152" class="label">5. Existing systems use approved connections. They cannot directly change official payment records.</text>
+<text x="362" y="1177" class="label">Database commits wait for a safe remote copy. Message copies can lag; replay from retained work.</text>
+<rect x="1265" y="245" width="305" height="445" rx="9" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.5"/>
+<text x="1278" y="270" class="heading">Entity B - separate systems</text>
+<text x="1278" y="292" class="label">Separate live subscriptions</text>
+<text x="1278" y="312" class="label">Separate recovery subscription</text>
+<text x="1278" y="332" class="label">Separate application environment</text>
+<text x="1278" y="352" class="label">Separate records and waiting work</text>
+<text x="1278" y="372" class="label">Separate secrets and permissions</text>
+<text x="1278" y="392" class="label"></text>
+<text x="1278" y="412" class="label">Shared setup rules</text>
+<text x="1278" y="432" class="label">do not give shared record access.</text>
+<text x="1278" y="452" class="label"></text>
+<text x="1278" y="472" class="label">Separate sign-in system if required</text>
+<text x="1278" y="492" class="label">by the bank or country rules.</text>
+<rect x="1265" y="735" width="305" height="385" rx="9" fill="#fff7ed" stroke="#c2410c" stroke-width="1.5"/>
+<text x="1278" y="760" class="heading">6. Monitoring and security</text>
+<text x="1278" y="782" class="label">Azure Monitor - service health</text>
+<text x="1278" y="802" class="label">Keep approved activity records</text>
+<text x="1278" y="822" class="label">Sentinel / Defender - security</text>
+<text x="1278" y="842" class="label">Blob Storage - protected records</text>
+<text x="1278" y="862" class="label"></text>
+<text x="1278" y="882" class="label">Limit who can read records</text>
+<text x="1278" y="902" class="label">Remove sensitive details</text>
+<text x="1278" y="922" class="label">Store only in approved locations</text>
+<text x="1278" y="942" class="label">Track cost per payment</text>
+<text x="1278" y="962" class="label"></text>
+<text x="1278" y="982" class="label">Practice full recovery quarterly</text>
+<text x="1278" y="1002" class="label">Test saved copies monthly</text>
+<polyline points="1240,785 1265,785" class="rep"/>
+<rect x="24" y="1220" width="1546" height="78" rx="9" fill="#e2e8f0" stroke="#94a3b8" stroke-width="1.5"/>
+<text x="37" y="1245" class="heading">Recovery limits and responsibilities</text>
+<text x="37" y="1267" class="label">Target: zero protected commits lost after one location fails. Resuming without remote protection needs prior bank approval.</text>
+<text x="37" y="1287" class="label">Product owns applications. Platform owns shared setup. Data team owns SQL recovery. Payment and risk owners approve recovery modes.</text>
+</svg>
