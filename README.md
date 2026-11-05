@@ -104,7 +104,7 @@ Existing AWS workloads stay connected during coexistence. Move a workload only a
 
 The brief says near-zero loss. It does not define the permitted number or value of missing payments. I propose zero lost committed records for one covered location failure. This is a stricter design assumption, not an extra requirement stated in the question. A commit is a completed database change, even if its reply never reached the customer.
 
-I prefer this assumption until the payment owner defines an acceptable loss. It avoids inventing an allowance for missing payments. It also costs more and can interrupt posting during connection failures. Compare that cost with a simpler managed database that copies changes later. If a measurable loss tolerance is approved, reassess the managed option. [Azure SQL recovery limits](https://learn.microsoft.com/en-us/azure/reliability/reliability-sql-database)
+I prefer this assumption until the payment owner defines an acceptable loss. It avoids inventing an allowance for missing payments. It also costs more and can interrupt posting during connection failures. Compare that cost with a simpler managed database that copies changes later. If a measurable loss tolerance is approved, reassess the managed option.
 
 Under the selected design, the second location must save each change before the main database completes it. Pause new posting when that protection is unavailable. Do not return a successful payment result for unfinished work.
 
