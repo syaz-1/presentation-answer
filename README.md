@@ -80,7 +80,7 @@ Start with each component's needs, then compare the options.
 | Payment notifications | Fits, but consumes cluster capacity | Fits container-based handlers | Fits short work triggered by a payment event | More maintenance for this small task | **Functions**; keep payment rules outside trigger-specific code. |
 | Legacy vendor adapter needing OS-level installation | Needs vendor support for containers | Needs vendor support for containers | Usually needs redesign for this form | Preserves the supported installation | **Virtual Machines** until the vendor supports a safer move. |
 
-For the core path, I assume the platform team requires direct Kubernetes placement and maintenance controls. The question does not establish this need. Confirm it before accepting AKS's support cost. Container Apps can also provide scaling and version-based releases. Those features alone do not justify AKS. [Azure container comparison](https://learn.microsoft.com/en-us/azure/container-apps/compare-options)
+For the core path, I assume the platform team requires direct Kubernetes placement and maintenance controls. The question does not establish this need. Confirm it before accepting AKS's support cost. Container Apps can also provide scaling and version-based releases. Those features alone do not justify AKS. 
 
 Measure busy-period capacity, recovery, response time, operating effort and full cost. Functions behavior depends on its hosting plan. The [detailed comparison and portability table](appendix.md#1-compare-application-platforms--task-3) records the consequences. No hosting choice alone guarantees the payment service target.
 
