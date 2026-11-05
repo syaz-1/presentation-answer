@@ -4,7 +4,6 @@ Selected cloud: **Microsoft Azure**
 
 The proposal starts with the bank’s problems. Business needs drive the application, data and Azure decisions.
 
-**One-page presentation:** [PDF](one-page-answer.pdf) · [print version](one-page-answer.html) · [editable text](one-page-answer.md).
 
 ## My proposal
 
